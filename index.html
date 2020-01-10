@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+        <title>Player</title>
+        <style type="text/css">
+            .main {
+                display: block;
+                margin: auto;
+                padding: 0;
+                width: 1800px;
+                height: 1024px;
+                color: blue;
+            }
+            .block {
+                display: flex;
+                flex-direction:column;
+                align-items: center;
+                justify-content: center;
+                width: 50%;
+                height: 40%;
+                background-color: rgba(95, 160, 122, 0.089);
+            }
+            h1 {
+                color: black;
+            }
+         
+            small {
+               font-weight: bold;
+               color: rgb(29, 134, 19);
+           }
+         
+        </style>
+        <link href='./player/player.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="main">
+
+            <div class="block" id="block1">
+                <h1>Audio Player (wrapper for AUDIO HTML 5)</h1>
+                <ul>
+                    <li><h3>It is possible to select the audio source file -
+                            locally or from the network</h3></li>
+                    <li><h3>It is possible to download the audio file from the
+                            network</h3></li>
+                    <li><h3>It is possible to playback speed</h3></li>
+                    <li><h3>You can attach to any div or body</h3></li>
+                    <li><h3><img src="img/unload.svg" alt=""> - Select the audio source file</h3></li>
+                    <small>/*Create Player*/</small><br />
+                    <small>let player =playLib.createPlayer(document.getElementById("AnyDIV"))</small><br />
+                    <small>/*Delete Player*/</small><br />
+                    <small>let delpl = playLib.deletePlayer(player)</small>
+                </ul>
+            </div>
+            <div class="block" id="block2">
+            </div>
+        </body>
+
+        <script src="./player/player.js"></script>
+        <script type="text/javascript">
+    /*choose any div or body*/    
+    let player =  playLib.createPlayer(document.getElementById("block2"))
+    //  let playerBody = playLib.createPlayer(document.body)
+    // let delpl = playLib.deletePlayer(player)
+    </script>
+    </html>
