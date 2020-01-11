@@ -1,6 +1,6 @@
 # Audio Player (wrapper for AUDIO HTML 5)  
 
-## It used only JS and HTML 5
+## It used only JS and HTML 5 (without the use of additional frameworks)
 
 It is possible to select the audio source file - locally or from the network   
 It is possible to download the audio file from the network   
