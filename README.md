@@ -13,4 +13,4 @@ You can attach to any div or body
 `/*Delete Player*/`   
 `let delpl = playLib.deletePlayer(player)`
 
-https://playerexample-5e94d.web.app/
+https://playerexample-5e94d.firebaseapp.com/
